@@ -1,0 +1,41 @@
+name: Epic
+description: Template to create an epic with all relevant information.
+labels: ["Epic"]
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the user's problem we want to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What do we want to achieve?
+    validations:
+      required: true
+  - type: textarea
+    id: kpi
+    attributes:
+      label: KPI
+      description: How can we measure the success of this epic?
+    validations:
+      required: true
+  - type: input
+    id: concept
+    attributes:
+      label: Concept
+      description: If a concept already exists, link it here.
+  - type: textarea
+    id: questions
+    attributes:
+      label: Open Questions
+      description: Are there open questions that need to be answered?
+  - type: textarea
+    id: next-steps
+    attributes:
+      label: Next steps
+      description: How do we want to proceed? What are the next steps in order to achieve the goal?

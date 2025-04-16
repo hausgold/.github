@@ -1,0 +1,27 @@
+name: Feature/Task
+description: Create an issue descriping the development of a new feature or a general development task.
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the problem that we want to solve with this feature or change?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Describe as best as possible how we want to solve this problem. If you don't yet know how the problem is to be solved, leave this empty.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: If you already have a solution in mind, define all criteria that need to be fulfilled in order to deem this problem solved.
+      placeholder: "- [ ] When clicking X I want to see Y"
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: In case you have any additional resources (API documentations, Appsignal logs, ...), link them here.
